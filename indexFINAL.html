@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="swiper.min.css"/>
+        <link rel="stylesheet" href="stylesTest.css"/>
+        <link rel="stylesheet" href="swiper-bundle-min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Fredericka+the+Great&family=Original+Surfer&family=Sarala&family=Train+One&family=Vast+Shadow&display=swap" rel="stylesheet">
+        <title>Got to GO</title>
+    </head>
+    <body>
+        <div class="autoscroll">
+        <!-- Swiper -->
+            <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-18b752a1074b6d978"  cursive; style="transition-duration: 0ms; transform: translate3d(-320px, 0px, 0px);">
+                    <div class="swiper-slide menu swiper-slide-prev saralaFont" role="group" aria-label="1 / 2">
+
+                        <div class="button">
+                            <a href="../tools/index1.html" target="_blank">Tools</a>
+                        </div>
+                        <div class="button">
+                            <a href="../bears/index.html" target="_blank">Bears</a>
+                        </div>
+                        <div class="button">
+                            <a href="clothes-shoes/index.html" target="_blank">Clothes & Shoes</a>
+                        </div>
+                        <div class="button">
+                            <a href="electronics" target="_blank">Electronics</a>
+                        </div>
+                        <div class="button">
+                            <a href="media/index.html" target="_blank">Media</a>
+                        </div>
+                        <div class="button">
+                            <a href="misc/index.html" target="_blank">Misc</a>
+                        </div>
+                        <!-- 
+                        <div class="button">
+                            <a href="blog/index.html" target="_blank">Blog</a> 
+                        </div>
+                        -->
+                    </div>
+                    <div class="swiper-slide content swiper-slide-active" role="group" aria-label="2 / 2">
+
+                        <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        </div>
+                        <div class="marginTop">
+                            <div class="font60">Welcome to Faraday's PC!!! 
+                            </div>
+                            <br>
+                            <div class="font40">Everything listed must go</div>
+                                <br>
+                                <div class="font20">
+                                We will accept cash, Paypal, debit / credit.<br><br><a href="http://www.merchantequip.com/information-center/credit-card-logos/"><img src="https://www.merchantequip.com/image/?logos=v|m|a|d|p&height=64" alt="Merchant Equipment Store Credit Card Logos" /></a><br><br>Sorry we will not be able to accept cashier checks, money orders or checks.<br>If you plan on paying with debit or credit, please let us know so we can make sure we bring the card reader.<br> If you want something, yet it needs to be shipped, please contact us to see if shipping is available.<br><br> MEETING LOCATIONS
+                                </div>
+                                <div class="font15">
+                                    The meeting spots for picking up items will be at the corner of Maize and Maple at the old Family Video store on Saturdays.<br>We wil also be available during the week from 11 am to 4 pm, with special arrangements till 6 pm at the First United Methodist Church by the corner of Broadway and 3rd street in the back of the building.  <br>We will meet there by the entrance to the parking lot on 3rd street.  <br>All items are first come first serve, nothing will be held. If you do not show up for a meet without notification before the time, any other items you wish to get will need to be paid for in advance.
+                                </div>
+                        </div>
+                    </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var menuButton = document.querySelector('.menu-button');
+            var openMenu = function () {
+            swiper.slidePrev();
+            };
+            var swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                slideChangeTransitionStart: function () {
+                var slider = this;
+                if (slider.activeIndex === 0) {
+                    menuButton.classList.add('cross');
+                    // required because of slideToClickedSlide
+                    menuButton.removeEventListener('click', openMenu, true);
+                } else {
+                    menuButton.classList.remove('cross');
+                }
+                },
+                slideChangeTransitionEnd: function () {
+                var slider = this;
+                if (slider.activeIndex === 1) {
+                    menuButton.addEventListener('click', openMenu, true);
+                }
+                },
+            },
+            });
+        </script>
+
+    </body>
+</html>

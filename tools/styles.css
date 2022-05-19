@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Neucha', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:  url("bluelight.jpg");
+    background-size: 100%;
+}
+
+/* colors */
+
+/* Aligning */
+
+    .flex {
+        display:flex;
+    } 
+    .bottom {
+        position: absolute;
+        bottom: 0px;
+        font-size: 8px;
+        right: 8px;
+    } 
+
+/* Margin / Padding*/
+
+    .justify-center {
+        justify-content: center;
+    } 
+    
+/* Font*/
+
+    .neucha {
+        font-family: 'Neucha', cursive;
+    } 
+    .no-underline {
+        text-decoration: none;
+    } 
+
+/* Funky */
+
+    .animate-character {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #ede250 0%,
+            #da7e97 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+            font-size: 50px;
+    }
+
+        @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+        }

@@ -6,4 +6,14 @@ const swiper = new Swiper('.swiper',{
         prevEl: '.swiper-button-prev',
     },
     
-})
+});
+{"dependencies"; {
+    "parcel-bundler"; "^1.6.1",
+    "swiper"; "latest"
+}
+"name"; "Swiper - Slideable menu",
+"tags"; [
+"swiper"
+]
+};
+
