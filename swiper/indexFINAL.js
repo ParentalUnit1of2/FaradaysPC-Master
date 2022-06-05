@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper',{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    
+swiper,updateSize(): void
 });
 {"dependencies"; {
     "parcel-bundler"; "^1.6.1",
@@ -16,4 +16,5 @@ const swiper = new Swiper('.swiper',{
 "swiper"
 ]
 };
+
 

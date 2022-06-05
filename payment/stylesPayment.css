@@ -8,7 +8,6 @@ html,
     body {
         position: relative;
         height: 100%;
-        
     }
 .marginTop {
     margin-top: 50px;
@@ -22,7 +21,7 @@ html,
     text-decoration: none;
     margin-bottom: .5rem;
     display: block;
-    font-size: 20px;
+    font-size: 13px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -38,11 +37,10 @@ a:-webkit-any-link {
     text-decoration-style: initial;
     text-decoration-color: initial;
 }
-
 body {
     background-attachment: fixed;
     font-size: 14px;
-    background-image: url("../images/city.png");
+    background-image: url("../images/change.jpeg");
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -70,15 +68,20 @@ body {
     font-size: 20px;
     color: black;
     font-family: 'Sarala', sans-serif;
+    font-weight: bold;
 }
 .font15 {
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     font-family: 'Sarala', sans-serif;
+    font-weight: bold;
 }
 .swiper {
     width: 100%;
     height: 100%;
+}
+.underline {
+    text-decoration: underline;
 }
 
 .swiper-slide {
@@ -190,5 +193,21 @@ body {
     -ms-transform: translateY(-13.5px) rotate(40.5deg);
     transform: translateY(-13.5px) rotate(40.5deg);
 }
+.bottom {
+    position: absolute; 
+    bottom: 10px; 
+    background-color:black;
+    text-align: right;
+    color: white;
+    font-size: 30;
+    right: 0px;
+    font-family: 'Sarala', sans-serif;
+}
 
+.colorWhite {
+    color: white;
+}
 
+.colorBlue {
+    color: lightblue;
+}
