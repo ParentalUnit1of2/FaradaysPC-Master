@@ -5,10 +5,10 @@
 }
 
 html,
-    body {
-    position: relative;
-    height: 100%;
-    }
+body {
+	position: relative;
+	height: 100%;
+}
 
 body {
 	max-width: 100vw;
@@ -73,9 +73,7 @@ body {
 	font-weight: bold;
 	font-size: 75px;
 	text-align: center;
-	text-shadow: -1px 1px 0 white,
-				1px -1px 0 white,
-				-1px -1px 0 white;
+	text-shadow: -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -95,26 +93,29 @@ body {
 }
 
 .colorWhite {
-    color: white;
+	color: white;
 }
 
 .colorBlue {
-    color: lightblue;
+	color: lightblue;
 }
 .header {
 	color: black;
 	font-size: 50px;
-	font-family: 'Merienda', cursive;
+	font-family: "Merienda", cursive;
 	/* font-weight: bold; */
-	text-align: center;	
+	text-align: center;
+}
+
+.header1 {
+	color: black;
+	font-size: 25px;
+	font-family: "Merienda", cursive;
+	text-align: center;
 }
 
 :root {
-    --swiper-theme-color: black;
+	--swiper-theme-color: black;
 	font-weight: bold;
 	font-size: 3rem;
 }
-
-
-
-
