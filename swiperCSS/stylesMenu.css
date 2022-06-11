@@ -2,38 +2,39 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-weight: normal;
 }
 
 html,
-    body {
-        position: relative;
-        height: 100%;
-    }
+body {
+	position: relative;
+	height: 100%;
+}
 
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
-	background-color: red;
+	background-color: slateBlue;
 }
 
 .container {
-	background-image: url(../images/watermelon1.jpg);
+	background-color: slateBlue;
 	display: grid;
 	place-items: center;
-	min-height: 65vh;
+	min-height: 55vh;
 }
 
 .swiper {
 	width: 100%;
 	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 }
 
 .swiper-slide {
 	background-position: center;
 	background-size: cover;
-	width: 500px;
-	height: 400px;
+	width: 400px;
+	height: 300px;
 }
 
 .swiper-slide img {
@@ -46,12 +47,12 @@ body {
 .button {
 	background-color: black;
 	border: 2px solid white;
+	font-family: "Alegreya Sans SC", sans-serif;
 	padding: 1%;
 	width: 100px;
 	min-width: 90px;
 	min-height: 40px;
 	text-align: center;
-	text-decoration: none;
 	display: block;
 	font-size: 20px;
 	border-radius: 25px;
@@ -59,7 +60,7 @@ body {
 }
 
 :root {
-    --swiper-theme-color: black;
+	--swiper-theme-color: black;
 	font-weight: bold;
 	font-size: 3rem;
 }
@@ -88,7 +89,7 @@ body {
 }
 
 .swiper-pagination {
-	padding-bottom: 5%;
+	bottom: 10px;
 	font-size: 2rem;
 }
 
@@ -98,13 +99,14 @@ body {
 	text-align: center;
 }
 .colorWhite {
-    color: white;
+	color: white;
+	text-decoration: none;
 }
 .colorBlue {
-    color: lightblue;
+	color: lightblue;
 }
 .colorRed {
-    color: darkblue;
+	color: darkblue;
 }
 .fontLarge {
 	font-size: 80px;
@@ -112,8 +114,13 @@ body {
 .header {
 	color: black;
 	font-size: 30px;
-	font-family: 'Merienda', cursive;
-	/* font-weight: bold; */
-	text-align: center;	
+	font-family: "Raleway", sans-serif;
+	text-align: center;
 }
-
+.header1 {
+	color: white;
+	font-size: 20px;
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
