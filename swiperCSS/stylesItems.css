@@ -13,13 +13,10 @@ body {
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
-	background-color: slateBlue;
+	background: linear-gradient(45deg, #778899 5%, #fffff0 100%);
 }
 .container {
-	background-color: slateBlue;
-	display: grid;
-	place-items: center;
-	min-height: 65vh;
+	background: linear-gradient(45deg, #778899 5%, #fffff0 100%);
 }
 .swiper {
 	width: 75%;
@@ -86,7 +83,7 @@ body {
 .colorAlt {
 	color: black;
 	font-weight: bold;
-	font-size: 75px;
+	font-size: 35px;
 	text-align: center;
 	text-shadow: -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
 }
