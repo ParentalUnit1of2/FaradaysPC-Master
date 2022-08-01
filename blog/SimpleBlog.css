@@ -17,9 +17,10 @@
 }
 
 body {
-	background: #fff;
-	font: normal 70%/1.5em Verdana, Tahoma, Verdana, sans-serif;
-	color: #333;
+	/* background: #fff; */
+	font: bold 70%/1.5em;
+	font-family: "Arima Madurai", cursive;
+	color: black;
 	text-align: center;
 	background-image: url("../images/seattle1.jpeg");
 	background-size: cover;
@@ -29,7 +30,7 @@ body {
 a {
 	background: inherit;
 	text-decoration: none;
-	color: #667f99;
+	color: black;
 }
 a:hover {
 	background: inherit;
@@ -39,32 +40,64 @@ a:hover {
 h1,
 h2,
 h3 {
-	font-family: Verdana, Tahoma, "Trebuchet MS", Sans-serif;
+	font-family: "Arima Madurai", cursive;
 	font-weight: Bold;
 }
 h1 {
-	font-size: 120%;
+	font-size: 180%;
 }
 h2 {
-	font-size: 110%;
+	font-size: 150%;
 	text-transform: uppercase;
 }
 h3 {
 	font-size: 110%;
+	font-family: "Arima Madurai", cursive;
 	color: #007e80;
+	border-bottom: 1px solid hotpink;
 }
 
 h1,
-h2,
-h3,
+h2 {
+	margin: 0;
+	padding: 10px;
+	color: black;
+	font-family: "Arima Madurai", cursive;
+	font-weight: bold;
+}
+h4 {
+	text-align: left;
+	font-family: "Arima Madurai", cursive;
+	font-size: 0.75rem;
+	color: black;
+}
+.bottom {
+	border-bottom: 1px solid #0000ff;
+}
+
 p {
 	margin: 0;
 	padding: 10px;
+	color: black;
+	font-family: "Arima Madurai", cursive;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+	font-size: 1.19rem;
 }
+
 ul,
 ol {
 	margin: 10px 20px;
 	padding: 0 20px;
+}
+
+.padding {
+	padding: 70px;
+	font-size: 15px;
+}
+
+.black {
+	color: black;
 }
 
 /* images */
@@ -84,9 +117,10 @@ code {
 	text-align: left;
 	display: block;
 	overflow: auto;
-	font: 500 1em/1.5em "Lucida Console", "courier new", monospace;
+	font-family: "Arima Madurai", cursive;
+	font: 500 1em/1.5em;
 	/* white-space: pre; */
-	background: #fafafa;
+	/* background: #fafafa; */
 	border: 1px solid #f2f2f2;
 }
 acronym {
@@ -98,6 +132,7 @@ acronym {
 blockquote {
 	margin: 10px;
 	padding: 0 0 0 28px;
+	font-family: "Arima Madurai", cursive;
 	border: 1px solid #f2f2f2;
 	background: #fafafa url(quote.gif) no-repeat 5px 5px;
 }
@@ -106,28 +141,31 @@ blockquote {
 form {
 	margin: 10px;
 	padding: 0 5px;
-	border: 1px solid #f2f2f2;
-	background-color: #fafafa;
+	border: 2px solid black;
+	background-color: transparent;
 }
 label {
 	display: block;
+	font-family: "Arima Madurai", cursive;
 	font-weight: bold;
 	margin: 5px 0;
 }
 input {
 	padding: 2px;
-	border: 1px solid #eee;
-	font: normal 1em Verdana, sans-serif;
-	color: #777;
+	border: 2px solid black;
+	font-family: "Arima Madurai", cursive;
+	font-size: 0.75rem;
+	color: black;
+	background-color: transparent;
 }
 textarea {
 	width: 400px;
 	padding: 2px;
-	font: normal 1em Verdana, sans-serif;
-	border: 1px solid #eee;
+	font-family: "Arima Madurai", cursive;
+	border: 2px solid black;
 	height: 100px;
 	display: block;
-	color: #777;
+	background-color: transparent;
 }
 input.button {
 	margin: 0;
@@ -159,8 +197,24 @@ form.search input.button {
 	width: 60px;
 }
 
+.bold {
+	color: darkred;
+	font-size: 1.2rem;
+}
+
+.link {
+	color: deeppink;
+}
+.padding4 {
+	padding: 4px;
+}
+
+.padding2 {
+	padding: 0px;
+}
+
 /********************************************
-   LAYOUT
+	LAYOUT
 ********************************************/
 #wrap {
 	width: 833px;
@@ -182,18 +236,17 @@ form.search input.button {
 	background: transparent;
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
-	font-family: "Raleway", sans-serif;
+	font-size: 1.31rem;
+	font-family: "Oswald", sans-serif;
 }
 #header h1#logo {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	font: bold 42px "Trebuchet MS", Arial, Sans-serif;
-	letter-spacing: 1px;
-	color: #524176;
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 1.5px;
+	color: black;
 	text-transform: none;
-	font-family: "Raleway", sans-serif;
 
 	/* change the values of top and Left to adjust the position of the logo*/
 	top: 19px;
@@ -204,9 +257,9 @@ form.search input.button {
 	z-index: 9999999;
 	margin: 0;
 	padding: 0;
-	font: bold 12px "Trebuchet MS", Arial, Sans-serif;
+	font-family: "Oswald", sans-serif;
 	text-transform: none;
-	color: #524176;
+	color: black;
 
 	/* change the values of top and Left to adjust the position of the slogan*/
 	top: 65px;
@@ -224,7 +277,9 @@ form.search input.button {
 	height: 26px;
 	background: #b9dae3 url(menubg.jpg) repeat-y;
 	margin: 0;
-	font: bolder 12px/26px Tahoma, Verdana, Arial, Sans-Serif;
+	font-family: "Oswald", sans-serif;
+	font-weight: bold;
+	font-size: 0.75rem/1.63rem;
 }
 #menu ul {
 	margin: 0;
@@ -258,9 +313,9 @@ form.search input.button {
 	margin: 0;
 }
 #main h1 {
-	color: #667f99;
-	border-bottom: 1px solid #cccccc;
-	background: #f6f6f6 url(arrow.gif) no-repeat 5px 50%;
+	color: #281a3d;
+	border-bottom: 1px solid #0000ff;
+	background: url(arrow.gif) no-repeat 3px 50%;
 	padding: 3px 0 3px 20px;
 	margin: 10px 0 0 0;
 }
@@ -300,7 +355,7 @@ form.search input.button {
 	padding: 3px 10px;
 	font: bold 120% Tahoma, Verdana, Sans-Serif;
 	color: #fff;
-	background: #b6b8bb;
+	background: dimgray;
 }
 #sidebar ul.sidemenu {
 	list-style: none;
@@ -324,19 +379,21 @@ form.search input.button {
 	font-weight: bold;
 	padding: 2px 0;
 	background: none;
+	font-size: 0.81rem;
 }
 
 /* footer */
 #footer {
 	clear: both;
 	color: #66737b;
-	font: normal 90% Verdana, Tahoma, sans-serif;
+	font-family: "Poiret One", cursive;
 	background: #fff url(footerbg.jpg) no-repeat center top;
 	width: 833px;
 	height: 60px;
 	text-align: center;
 	padding: 8px 0 0 0;
 	margin: 0 auto;
+	background-color: transparent;
 }
 #footer a {
 	text-decoration: none;
@@ -364,5 +421,5 @@ form.search input.button {
 	color: #ccc;
 }
 .rail {
-	font-family: "Raleway", sans-serif;
+	font-family: "Poiret One", cursive;
 }

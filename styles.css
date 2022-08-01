@@ -45,22 +45,22 @@ body {
 	font-family: "Sarala", sans-serif;
 }
 .font60 {
-	font-size: 60px;
+	font-size: 3.75rem;
 	color: black;
 	font-family: "Train One", cursive;
 }
 .font40 {
-	font-size: 40px;
+	font-size: 2.5rem;
 	color: black;
 	font-family: "Vast Shadow", cursive;
 }
 .font20 {
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: black;
 	font-family: "Sarala", sans-serif;
 }
 .font15 {
-	font-size: 17px;
+	font-size: 1.06rem;
 	color: black;
 	font-family: "Sarala", sans-serif;
 }
@@ -208,7 +208,7 @@ body {
 	text-decoration: none;
 	margin-bottom: 0.5rem;
 	display: block;
-	font-size: 15px;
+	font-size: 0.94rem;
 	border-radius: 50px;
 	cursor: pointer;
 	/* background-color: #b81515; */

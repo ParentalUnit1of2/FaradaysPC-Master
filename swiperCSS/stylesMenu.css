@@ -49,7 +49,7 @@ body {
 	min-height: 40px; */
 	text-align: center;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 0.63rem;
 	border-radius: 25px;
 	cursor: pointer;
 	font-family: "Sarala", sans-serif;
@@ -111,14 +111,14 @@ body {
 }
 .header {
 	color: black;
-	font-size: 30px;
+	font-size: 1.88rem;
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
 	text-align: center;
 }
 .header1 {
 	color: white;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-family: "Raleway", sans-serif;
 	font-weight: normal;
 	text-align: center;

@@ -17,48 +17,54 @@ body {
 	background: linear-gradient(45deg, #778899 5%, #fffff0 100%);
 }
 .container {
-	margin: 0 auto;
 	background: linear-gradient(45deg, #778899 5%, #fffff0 100%);
 }
+
 .swiper {
-	width: 75%;
-}
-
-.image_wrapper {
 	width: 100%;
-	position: relative;
-	padding-top: 4%;
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
-.image_wrapper img {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 80%;
-	height: 80%;
-	object-fit: contain;
-	object-position: center top;
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 400px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: solid white 3px;
 }
 
 .button {
 	background-color: red;
 	border: 2px solid white;
-	padding: 5px;
+	padding: 2px;
 	width: 40px;
 	/* min-width: 90px;
 	min-height: 40px; */
 	text-align: center;
 	display: inline-block;
-	font-size: 0.63rem;
-	border-radius: 28px;
+	font-size: 10px;
+	border-radius: 25px;
 	cursor: pointer;
 	font-family: "Sarala", sans-serif;
 	/* margin-left: 5px; */
 }
 
+:root {
+	--swiper-theme-color: black;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
 /* .bottom {
 	position: fixed;
-	bottom: 2px;
+	bottom: 1%;
 	background-color: black;
 	text-align: right;
 	color: white;
@@ -67,18 +73,11 @@ body {
 	font-family: "Sarala", sans-serif;
 } */
 
-.colorAlt {
-	color: black;
-	font-weight: bold;
-	font-size: 0.75rem;
-	text-align: center;
-	text-shadow: -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
-}
-
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	/* border-radius: 0; */
 	background-color: yellow;
 	border: 3px solid black;
-	/* padding: 5px 9px 9px 5px; */
+	padding: 5px 9px 9px 5px;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
@@ -87,38 +86,42 @@ body {
 }
 
 .swiper-pagination {
-	padding-bottom: 5%;
+	bottom: 10px;
 	font-size: 2rem;
 }
 
+.colorAlt {
+	color: black;
+	font-size: 22px;
+	text-align: center;
+	text-shadow: -1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
 .colorWhite {
 	color: white;
 	text-decoration: none;
 }
-
 .colorBlue {
 	color: lightblue;
 }
+.colorRed {
+	color: darkblue;
+}
+.fontLarge {
+	font-size: 80px;
+}
 .header {
-	color: white;
-	font-size: 1.25rem;
-	font-family: "Merienda", cursive;
+	color: black;
+	font-size: 30px;
+	font-family: "Raleway", sans-serif;
 	font-weight: normal;
 	text-align: center;
 }
-
 .header1 {
 	color: white;
-	font-size: 1.56rem;
-	font-family: "Merienda", cursive;
+	font-size: 20px;
+	font-family: "Raleway", sans-serif;
 	font-weight: normal;
 	text-align: center;
-}
-
-:root {
-	--swiper-theme-color: black;
-	font-weight: bold;
-	font-size: 3rem;
 }
 .rotate180 {
 	-webkit-transform: rotate(180deg);
