@@ -1,0 +1,4 @@
+{
+    "ShortcutMenuBar.toggleActivityBar": true,
+    "ShortcutMenuBar.userButton01Command": "workbench.action.files.saveAs"
+}
