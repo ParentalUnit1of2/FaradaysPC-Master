@@ -4,95 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../swiperCSS/swiper.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../swiperCSS/swiper-bundle-min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main1.css" />
+    <link rel="stylesheet" href="updated.css" />
+    <link rel="stylesheet" href="base1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Original+Surfer&family=Sarala&family=Train+One&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <script src="modernizr.js"></script>
+    <script defer src="fontawesome/all.min.js"></script>
+
+    <!-- favicons
+        ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <title>Faraday's PC</title>
 </head>
 
 <body>
-    <div class="autoscroll">
-        <!-- Swiper -->
-        <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-            <div class="swiper-wrapper" id="swiper-wrapper-18b752a1074b6d978" style="transition-duration: 0ms; transform: translate3d(-320px, 0px, 0px);">
-                <div class="font20 swiper-slide menu swiper-slide-prev saralaFont" role="group" aria-label="1 / 2">
+    <!-- <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> -->
 
+    <!-- Header
+        ================================================== -->
+    <header class="s-header">
 
-                    <div class="bn53">
-                        <a href="../payment/indexPayment.html">Payment & Meeting Locations</a>
-                    </div>
-                    <div class="bn53">
-                        <a href="../tools/toolsMenu.html">Tools</a>
-                    </div>
-                    <div class="bn53">
-                        <a href="../bears/bearsMenu.html">Bears</a>
-                    </div>
-                    <!-- <div class="bn53">
-                        <a href="indexWork.html">Bears</a>
-                    </div> -->
-                    <!-- <div class="bn53">
-                        <a href="../clothes-shoes/clothesMenu.html">Clothes & Shoes</a>
-                    </div> -->
-                    <div class="bn53">
-                        <a href="indexWork.html">Clothes & Shoes</a>
-                    </div>
-                    <!-- <div class="bn53">
-                        <a href="../electronicsMenu.html">Electronics</a>
-                    </div> -->
-                    <div class="bn53">
-                        <a href="indexWork.html">Electronics</a>
-                    </div>
-                    <div class="bn53">
-                        <a href="../media/mediaMenu.html">Media</a>
-                    </div>
-                    <!-- <div class="bn53">
-                        <a href="misc/indexMiscMenu.html">Misc</a>
-                    </div> -->
-                    <div class="bn53">
-                        <a href="indexWork.html">Misc</a>
-                    </div>
-                    <!-- 
-                        <div class="bn53">
-                            <a href="blog/blogMenu.html">Blog</a> 
-                        </div>
-                        -->
-                    <!-- 
-                        <div class="bn53">
-                            <a href="about/indexAbout.html">About</a> 
-                        </div>
-                        -->
-                    <div class="bn53">
-                        <a href="../contact/contactIndex.html">Contact Us</a>
-                    </div>
-                </div>
-                <div class="swiper-slide content swiper-slide-active" role="group" aria-label="2 / 2">
+        <div class="row">
 
-                    <div class="menu-button">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="marginTop">
-                        <div class="font60">Welcome to Faraday's PC!!!
-                        </div>
-                        <br>
-                        <div class="font40">Everything listed must go</div>
+            <div class="s-header__content column smallerHeading">
 
-                    </div>
-                </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
+
+        </div> <!-- end row -->
+
+        <nav class="s-header__nav-wrap">
+
+            <div class="row">
+
+                <ul class="s-header__nav extra">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="has-children"><a href="#0">Categories</a>
+                        <ul>
+                            <li class="extraPadding"><a href="../../tools/toolsmenu.html">Tools</a></li>
+                            <li><a href="../../bears/bearsmenu.html">Bears</a></li>
+                            <li><a href="../../clothes-shoes/clothesmenu.html">Clothes & Shoes</a></li>
+                            <li><a href="../../misc/miscmenu.html">Misc</a></li>
+                            <li><a href="../../electronics/electronicsmenu.html">Electronics</a></li>
+
+                            <li class="has-children nav"><a href="../../media/mediaMenu.html">Media</a>
+                                <ul>
+                                    <li><a href="../../media/fiction.html">Fiction</a></li>
+                                    <li><a href="../../media/nonfiction.html">Non Fiction</a></li>
+                                    <li><a href="../../media/audio.html">Audio</a></li>
+                                    <li><a href="../../media/movies.html">Movies</a></li>
+                                    <li><a href="../../media/specialty.html">Specialty</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <!-- <li><a href="archives.html">Archives</a></li> -->
+                    <li class="has-children"><a href="index.html">Blog</a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <!-- <li><a href="single.html">Single Blog</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="../contact/contactIndex.html">Contact Us</a></li>
+                    <li><a href="../payment/indexPayment.html">Payment & Meetings</a></li>
+                </ul> <!-- end #nav -->
+
+            </div>
+
+        </nav>
+        <!-- end #nav-wrap -->
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header>
+
+
+    <!-- <div class="marginTop">
+        <div class="font60">Welcome to Faraday's PC!!!
+        </div>
+        <br>
+        <div class="font40">Everything listed must go</div>
+
+    </div> -->
+
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+
+    <!-- <div class="row s-footer__top footerTrans">
+        <div class="column footerTrans footerS">
+            <ul class="s-footer__social">
+                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>  -->
+    <!-- end footer__top -->
+
+    <div class="row s-footer__bottom">
+
+        <div class="ss-copyright bottom">
+            <span>© Copyright Keep It Simple 2019</span>
+            <span>Design by &nbsp; <a href="https://www.styleshout.com/">StyleShout</a>&nbsp;&nbsp;&nbsp; Image by &nbsp;
+                <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2534686">Pixabay</a>
+            </span>
         </div>
 
-        <div class="bottom">Image by <a class="colorBlue" href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2534686">David Mark</a> from <a class="colorBlue" href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2534686">Pixabay</a></div>
-    </div>
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../swiperJS/indexPayment.js"></script>
+    </div> <!-- end footer__bottom -->
+
+    <!-- Java Script
+        ================================================== -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

@@ -1,0 +1,77 @@
+/* .footerTrans {
+	background-image: 
+	linear-gradient(to bottom, #fff2e2, #fef1e0, #feefdd, #fdeedb, #fdecd9, #fbead7, #f8e7d5, #f6e5d3, #f1e1d1, #edddcf, #e8d9cc, #e3d5ca);
+} */
+
+.footerTran {
+	background-image: linear-gradient(
+		to top,
+		#fff2e2,
+		#f8ebdc,
+		#f1e3d6,
+		#eadcd0,
+		#e3d5ca
+	);
+}
+
+.f400 {
+	font-family: "Arima Madurai", cursive;
+	font-weight: 400;
+	font-size: 2.02rem;
+	line-height: 1.975;
+	color: #272727;
+}
+
+p.second {
+	font-family: "Arima Madurai", cursive;
+	font-weight: 400;
+	font-size: 1.9rem;
+	line-height: 1.975;
+	color: #272727;
+}
+
+.font {
+	font-size: 1.6rem;
+}
+
+.bold {
+	color: darkred;
+	font-size: 1.2rem;
+}
+
+.outline {
+	outline-style: groove;
+	color: black;
+}
+
+.black {
+	color: black;
+	font-family: "Arima Madurai", cursive;
+}
+
+.font {
+	font-size: 1.6rem;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 1px;
+	/* background-color: black; */
+	text-align: center;
+	/* color: white; */
+	font-size: 30;
+	right: 0px;
+	font-family: "Sarala", sans-serif;
+}
+
+.extra {
+	font-size: 1.468rem;
+}
+
+.smallerHeading {
+	min-height: 8rem;
+}
+
+.extraPadding {
+	padding: 0 3rem;
+}
